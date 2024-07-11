@@ -9,21 +9,21 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		int A, B, C;
-		boolean result;
+		//boolean result;
 		
+		//System.out.print("a: ");
 		A = sc.nextInt();
-		//B = sc.nextInt();
+		//System.out.print("b: ");
+		B = sc.nextInt();
 		//C = sc.nextInt();
 		
-		if(A%4==0) {
-			if(A%100!=0 | A%400==0) {
-				System.out.print("1"); 
-			}else {
-				System.out.println("0");
-			}
 		
+		if(B>=45) {
+				System.out.print(A+" "+(B-45)); 
+		}else if(A>=1 && B<45){
+				System.out.print((A-1)+" "+(B+15));
 		}else {
-			System.out.println("0");
+			System.out.print((A+23)+" "+(B+15));
 		}
 		
 		sc.close();
